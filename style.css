@@ -1,0 +1,603 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* logo left, links right */
+  background-color: #f9f9f9b1;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* keeps it on top */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: #133a21;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.25rem 0.5rem;
+  transition: border-color 0.3s ease;
+  border: 1px solid transparent;
+  display: inline-block;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  border-color: #133a21;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: row;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .nav-links li a {
+    font-size: 1rem;
+  }
+}
+
+/* Home (Hero) Section */
+.home {
+  background: linear-gradient(to right, #00000088, #2e6f3988),
+              url('assets/images/hero-bg.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 8rem 2rem;
+  height: 450px;
+  width: 100%;
+}
+
+.LOGO img {
+  max-height: 200px; /* or any size you prefer */
+  width: auto;       /* maintain aspect ratio 
+  display: block;     removes inline spacing */
+  margin: 0 auto;    /* centers the image */
+  /*opacity: 0.5;*/
+  z-index:10;
+}
+
+
+.home h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  z-index:20;
+}
+
+.home p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  z-index:20;
+}
+
+/*invite */
+.invite {
+  height: 450px;
+  width: 100%;
+  display:grid;
+  grid-template-columns: 500px 1fr;
+  gap: 20px;
+  align-items: center;
+  padding: 40px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.invite .left-rectangle{
+  width:100%;
+  height:250px;
+  background-color: #1b3607;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.invite .right-rectangle{
+  width:100%;
+  min-height: 250px;
+  height: auto;
+  background-color: #ffffff;
+  margin-left: 20px;
+  text-align: left;
+  color: #1b3607;
+}
+.invite h3{
+  margin:0;
+  font-size: 24px;
+  color: #1b3607;
+  text-align: left;
+}
+
+.invite h2{
+  margin:0;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  
+}
+
+/* Left rectangle styles */
+.invite .left-rectangle p {
+  margin: 10px 0 0;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Right rectangle styles */
+.invite .right-rectangle p {
+  margin: 10px 0 0;
+  color: #1b3607; 
+  text-align: left;
+}
+
+.invite .left-rectangle,
+.invite .right-rectangle {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Countdown styles scoped inside the .countdown container */
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  background: transparent;
+  padding: 20px;
+}
+
+.countdown .time-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown .number {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.countdown .label {
+  font-size: 20px;
+  margin-top: 2px;
+  opacity: 0.8;
+  color: white;
+}
+
+.countdown .divider-line {
+  width: 2px;                          /* thickness of line */
+  height: 80px;                        /* make this taller as needed */
+  background-color: rgba(255, 255, 255, 0.3); /* light white line */
+  border-radius: 1px;                  /* optional: rounded edges */
+}
+
+
+
+
+.register-button {
+  display: block;
+  margin: 15px auto 0; /* ← This is the key */
+  padding: 10px 20px;
+  background-color: #f2fdee;
+  color: #1b3607;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #f2fdee;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: fit-content;
+  text-align: center;
+}
+
+
+.register-button:hover {
+  background-color: #1b3607;
+  color: #f2fdee;
+}
+
+
+/* Recap Section */
+.recap {
+  padding: 4rem 2rem;
+  background-color: #e9f2e4;
+  text-align: center;
+}
+
+.recap h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #133a21;
+}
+
+.recap p {
+  font-size: 1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.recap img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Location Section */
+.location {
+  height: 450px;
+  width: 100%;
+  padding: 3rem 2rem;
+  background-color: #ffffff;
+  text-align: left;
+  animation: fadeIn 2s ease-in;
+}
+
+.location h4 {
+  font-size: 1.8rem;
+  color: #0f4508;
+  margin-bottom: 0.5rem;
+}
+
+.location p {
+  font-size: 1rem;
+  color: #444444;
+}
+.map-container {
+  margin-top: 20px;
+  animation: slideUp 1s ease-in-out;
+  margin-bottom: 20px;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+/* Responsive Design for Phones */
+@media (max-width: 768px) {
+  .invite {
+    display: block;
+    padding: 20px;
+    height: auto;
+  }
+
+  .invite .left-rectangle,
+  .invite .right-rectangle {
+    margin: 10px 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .invite h2, .invite h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .invite p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .register-button {
+    margin: 15px auto;
+    font-size: 14px;
+  }
+
+  .location {
+    padding: 2rem 1rem;
+    height: auto;
+  }
+
+  .location h4 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .location p {
+    text-align: center;
+  }
+
+  .map-container iframe {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+
+/* Committees Section */
+.committees {
+  padding: 4rem 1rem;
+  background: #cdd9c7;
+  /*max-width: 1200px;*/
+  margin: 0 auto;
+  text-align: center;
+}
+
+.committees h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #0c470e;
+  border-bottom: 3px solid #056c2c;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.section-heading {
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.section-heading span {
+  font-size: 2rem;
+  color: #0c470e;
+  border-bottom: 3px solid #056c2c;
+  padding-bottom: 0.3rem;
+}
+
+
+/* Committee Cards */
+.english {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+.deutsch {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .english {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .deutsch {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+}
+
+.committee {
+  background-color: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/*.committee:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}*/
+
+.committee h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #0c470e;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.committee ul {
+  list-style: disc inside;
+  padding-left: 0;
+  text-align: left;
+  color: #0c470e;
+}
+
+.committee li {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+/* Responsive Text Scaling */
+@media (max-width: 600px) {
+  .committees h1 {
+    font-size: 2rem;
+  }
+
+  .committee h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Schedule Section */
+.Day {
+  padding: 4rem 1rem;
+  background-color: #ffffff;
+  /*max-width: 1200px;*/
+  margin: 0 auto;
+  text-align: center;
+  background: #cdd9c7;
+  
+}
+
+.Day h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #0c470e;
+  border-bottom: 3px solid #0f4508;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+/* Schedule Grid */
+.Schedule {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.dday {
+  background-color: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+}
+
+.dday h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #0f4508;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.dday ul {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  color: #0f4508;
+}
+
+.dday li {
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Note Paragraph */
+main > p {
+  font-size: 0.85rem;
+  color: #777;
+  text-align: center;
+  margin-top: 2rem;
+  font-style: italic;
+}
+
+/* Responsive Scaling */
+@media (max-width: 600px) {
+  .Day h1 {
+    font-size: 2rem;
+  }
+
+  .dday h3 {
+    font-size: 1.15rem;
+  }
+
+  .dday li {
+    font-size: 0.9rem;
+  }
+
+}
+
+
+.team-section {
+  padding: 3rem 1rem;
+  text-align: center;
+  background: #cdd9c7;
+}
+
+.team-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-member {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.team-member img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: 50% 20%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.team-member h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #666;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background:  #497338b1;
+  color: white;
+}
+@media (max-width: 768px) {
+  .team-member img {
+    height: auto;
+    object-fit: contain; /* or cover */
+    object-position: 50% 20%;
+  }
+}
