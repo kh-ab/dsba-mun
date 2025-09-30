@@ -21,7 +21,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000; /* keeps it on top */
-  background-color: white;
+  background: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -624,5 +624,6 @@ footer {
     object-position: 50% 20%;
   }
 }
+
 
 
