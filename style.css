@@ -448,6 +448,16 @@ nav {
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }*/
 
+.topic-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s ease;
+}
+
+.topic-link:hover {
+    color: #000000; /* darker shade on hover */
+}
+
 .committee h3 {
   font-size: 1.4rem;
   margin-bottom: 1rem;
@@ -466,16 +476,6 @@ nav {
 .committee li {
   margin: 0.5rem 0;
   line-height: 1.6;
-}
-
-.topic-link {
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.2s ease;
-}
-
-.topic-link:hover {
-    color: #000000; /* darker shade on hover */
 }
 
 /* Responsive Text Scaling */
@@ -634,6 +634,7 @@ footer {
     object-position: 50% 20%;
   }
 }
+
 
 
 
