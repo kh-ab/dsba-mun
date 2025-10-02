@@ -1,4 +1,4 @@
-const targetDate = new Date("Nov 6, 2025 18:00:00").getTime();
+const targetDate = new Date("Nov 6, 2025 17:30:00").getTime();
 
 const updateCountdown = () => {
   const now = new Date().getTime();
@@ -22,6 +22,7 @@ const updateCountdown = () => {
 
 setInterval(updateCountdown, 1000);
 updateCountdown(); // initial call
+
 
 
 console.log("Website loaded successfully!");
