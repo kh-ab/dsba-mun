@@ -468,6 +468,7 @@ nav {
 
 .committee ul {
   list-style: disc inside;
+  padding-top: 14px;
   padding-left: 0;
   text-align: left;
   color: #0c470e;
@@ -639,6 +640,7 @@ footer {
     object-position: 50% 20%;
   }
 }
+
 
 
 
