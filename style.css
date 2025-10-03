@@ -478,6 +478,11 @@ nav {
   line-height: 1.6;
 }
 
+.committee p {
+  text-align: left;
+  color: #0c470e;
+}
+
 /* Responsive Text Scaling */
 @media (max-width: 600px) {
   .committees h1 {
@@ -634,6 +639,7 @@ footer {
     object-position: 50% 20%;
   }
 }
+
 
 
 
