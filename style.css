@@ -648,7 +648,7 @@ main > p {
 .directors img {
   width: 100%;
   max-width: 600px; /* Optional: control width */
-  height: 400px;
+  height: 500px;
   object-fit: cover;
   object-position: center;
   border-radius: 10px;
@@ -726,6 +726,7 @@ footer {
   }
 
 }
+
 
 
 
