@@ -688,7 +688,11 @@ footer {
     object-fit: contain; /* or cover */
     object-position: 50% 20%;
   }
+  .footer-section {
+    flex: 1 1 100px;
+  }
 }
+
 
 
 
