@@ -98,7 +98,7 @@ nav {
 
 
 .home h1 {
-  font-size: 3rem;
+  font-size: 2.7rem;
   margin-bottom: 1rem;
   letter-spacing: 2px;
   z-index:20;
@@ -640,6 +640,7 @@ footer {
     object-position: 50% 20%;
   }
 }
+
 
 
 
