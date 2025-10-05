@@ -661,7 +661,7 @@ main > p {
 /* Double image size */
 .directors img {
   width: 100%;
-  max-width: 300px; /* Optional: control width */
+  max-width: 600px; /* Optional: control width */
   height: 300px;
   object-fit: cover;
   object-position: center;
@@ -740,6 +740,7 @@ footer {
   }
 
 }
+
 
 
 
