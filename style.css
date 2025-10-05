@@ -163,7 +163,7 @@ nav {
 
 /* Left rectangle styles */
 .invite .left-rectangle p {
-  margin: 10px 0 0;
+  margin: 20px 0 0;
   font-size: 15px;
   color: #ffffff;
   text-align: center;
@@ -246,6 +246,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   gap: 0.5rem;
+  margin-top: 3.5rem;
 }
 
 
@@ -738,6 +739,7 @@ footer {
   }
 
 }
+
 
 
 
