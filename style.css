@@ -131,7 +131,7 @@ nav {
 
 .invite .left-rectangle{
   width:100%;
-  height:340px;
+  height:320px;
   background-color: #1b3607;
   margin-right: 20px;
   border-radius: 8px;
@@ -139,7 +139,7 @@ nav {
 
 .invite .right-rectangle{
   width:100%;
-  min-height: 340px;
+  min-height: 320px;
   height: auto;
   background-color: #ffffff;
   margin-left: 20px;
@@ -246,7 +246,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   gap: 0.5rem;
-  margin-top: 1.5rem;
+  margin-top: 0.7rem;
 }
 
 
@@ -350,7 +350,7 @@ nav {
     margin: 10px 0;
     width:100%;
     width: 100%;
-    height: 300px;
+    height: 320px;
   }
 
   .invite h2, .invite h3 {
@@ -740,6 +740,7 @@ footer {
   }
 
 }
+
 
 
 
