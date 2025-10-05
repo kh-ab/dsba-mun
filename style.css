@@ -362,7 +362,7 @@ nav {
   }
 
   ..buttons{
-    gap: 0.9rem;
+    gap: 1.5rem;
   }
 
   .register-button {
@@ -738,6 +738,7 @@ footer {
   }
 
 }
+
 
 
 
