@@ -118,7 +118,7 @@ nav {
 
 /*invite */
 .invite {
-  height: 540px;
+  height: 520px;
   width: 100%;
   display:grid;
   grid-template-columns: 500px 1fr;
@@ -131,7 +131,7 @@ nav {
 
 .invite .left-rectangle{
   width:100%;
-  height:320px;
+  height:330px;
   background-color: #1b3607;
   margin-right: 20px;
   border-radius: 8px;
@@ -139,7 +139,7 @@ nav {
 
 .invite .right-rectangle{
   width:100%;
-  min-height: 320px;
+  min-height: 330px;
   height: auto;
   background-color: #ffffff;
   margin-left: 20px;
@@ -245,8 +245,8 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 0.5rem;
-  margin-top: 0.7rem;
+  gap: 0.7rem;
+  margin-top: 0.5rem;
 }
 
 
@@ -349,8 +349,7 @@ nav {
   .invite .right-rectangle {
     margin: 10px 0;
     width:100%;
-    width: 100%;
-    height: 320px;
+    height: 300px;
   }
 
   .invite h2, .invite h3 {
@@ -363,8 +362,8 @@ nav {
     text-align: center;
   }
 
-  ..buttons{
-    gap: 1.5rem;
+  .buttons{
+    gap: 1.2rem;
   }
 
   .register-button {
@@ -651,7 +650,7 @@ main > p {
   flex-direction: column;
   align-items: center;
   background-color: #f9f9f9;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   border-radius: 10px;
   padding: 1.5rem;
@@ -661,7 +660,7 @@ main > p {
 /* Double image size */
 .directors img {
   width: 100%;
-  max-width: 600px; /* Optional: control width */
+  max-width: 800px; /* Optional: control width */
   height: 300px;
   object-fit: cover;
   object-position: center;
@@ -740,6 +739,7 @@ footer {
   }
 
 }
+
 
 
 
