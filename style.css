@@ -76,17 +76,40 @@ nav {
 }
 
 /* Home (Hero) Section */
+/* Home (Hero) Section */
 .home {
-  background: linear-gradient(to right, #00000088, #2e6f3988),
-              url('assets/images/hero-bg.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #00000088, #2e6f3988);
   color: white;
-  text-align: center;
   padding: 5rem 2rem;
   width: 100%;
   min-height: 400px;
   height: auto;
+  text-align: center;
+  position: relative;
 }
 
+.left, .middle, .right {
+  flex: 1; 
+}
+
+.left img,
+.right img {
+  max-height: 220px; 
+  width: auto;      
+  display: block;    
+  margin: 0 auto;
+}
+
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .LOGO img {
   max-height: 200px; /* or any size you prefer */
   width: auto;       /* maintain aspect ratio 
@@ -101,20 +124,55 @@ nav {
   font-size: 3rem;
   margin-bottom: 1rem;
   letter-spacing: 2px;
+  position: relative;
   z-index:20;
 }
 
 @media (max-width: 768px) {
+  /* Hide left and right columns entirely */
+  .left,
+  .right {
+    display: none;
+  }
+
+  /* Remove flex layout on .home so only middle is shown */
+  .home {
+    display: block; /* or flex-direction: column; but block works */
+    padding: 3rem 1rem; /* optionally reduce padding */
+    text-align: center;
+    background: url('images/logo_no_title.png'), linear-gradient(to right, #00000088, #2e6f3988);
+    background-size: contain, cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: overlay
+  }
+   /* Middle takes full width */
+  .middle {
+    flex: none;
+    width: 100%;
+    align-items: center;
+  }
+
+  /* Resize middle heading and images */
   .home h1 {
-    font-size: 2.4rem;
+    font-size: 2rem;
+  }
+
+  /* Left and right images won't show anyway */
+  .left img,
+  .right img {
+    max-height: 60px;
+    margin: 0 auto;
   }
 }
 
 .home p {
   font-size: 1.2rem;
+  position: relative;
   margin-bottom: 0.5rem;
   z-index:20;
 }
+
 
 /*invite */
 .invite {
@@ -742,6 +800,7 @@ footer {
   }
 
 }
+
 
 
 
