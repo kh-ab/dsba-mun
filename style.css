@@ -167,6 +167,7 @@ nav {
   font-size: 15px;
   color: #ffffff;
   text-align: center;
+  margin-top: 20px;
 }
 
 /* Right rectangle styles */
@@ -242,7 +243,6 @@ nav {
 
 .buttons {
   display: flex;
-  padding: 20px;
   flex-direction: row;
   justify-content: center;
   gap: 0.5rem;
@@ -738,6 +738,7 @@ footer {
   }
 
 }
+
 
 
 
