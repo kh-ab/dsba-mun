@@ -663,7 +663,7 @@ main > p {
   width: 100%;
   max-width: 800px; 
   height: 300px;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -742,6 +742,7 @@ footer {
   }
 
 }
+
 
 
 
