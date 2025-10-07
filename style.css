@@ -801,6 +801,30 @@ footer {
 
 }
 
+.flag-marquee{
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.flag-track {
+  display: flex;
+  gap: 20px;
+  width: fit-content;
+  animation: left 320s linear infinite;
+}
+
+.flag-track img {
+  height: 30px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+@keyframes left {
+  0%   {transform: translateX(0);}
+  100% {transform: translateX(-50%);}
+}
 
 
 
