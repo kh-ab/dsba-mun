@@ -812,7 +812,7 @@ footer {
   display: flex;
   gap: 20px;
   width: fit-content;
-  animation: left 320s linear infinite;
+  animation: left 365s linear infinite;
 }
 
 .flag-track img {
@@ -825,6 +825,7 @@ footer {
   0%   {transform: translateX(0);}
   100% {transform: translateX(-50%);}
 }
+
 
 
 
