@@ -23,6 +23,13 @@ const updateCountdown = () => {
 setInterval(updateCountdown, 1000);
 updateCountdown(); // initial call
 
+const namespace = "qqwetu]";  
+const key = "homme";               
+
+
+fetch(https://api.countapi.xyz/hit/${namespace}/${key})
+  .catch(() => {});
 
 
 console.log("Website loaded successfully!");
+
