@@ -27,10 +27,11 @@ const namespace = "dsba";
 const key = "home";               
 
 
-fetch(https://api.countapi.xyz/hit/${namespace}/${key})
+fetch(https://api.countapi.xyz/hit/dsba/home)
   .catch(() => {});
 
 
 console.log("Website loaded successfully!");
+
 
 
