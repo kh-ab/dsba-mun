@@ -24,4 +24,5 @@ setInterval(updateCountdown, 1000);
 updateCountdown(); // initial call
 
 
-console.log("Website loaded successfully!");
+console.log("Welcome to the DSBAMUN website");
+
