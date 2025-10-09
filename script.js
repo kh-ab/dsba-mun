@@ -26,17 +26,14 @@ updateCountdown(); // initial call
 
 console.log("Welcome to the DSBAMUN website");
 
-const counterNamespace = "namespace"; // e.g. "mygithubuser-mysite"
+const counterNamespace = "namespace"; // 
 const counterKey = "visits";
 
-fetch(`https://api.countapi.xyz/hit/${counterNamespace}/${counterKey}`)
-  .then(response => response.json())
-  .then(data => {
-    console.log(`Visit #${data.value}`); // optional: log in dev tools
-  })
-  .catch(error => {
-    console.error("Visit counter failed:", error);
-  });
+fetch("https://api.countapi.xyz/hit/testnamespace/testkey")
+  .then(res => res.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err));
+
 
 
 
