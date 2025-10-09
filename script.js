@@ -23,14 +23,5 @@ const updateCountdown = () => {
 setInterval(updateCountdown, 1000);
 updateCountdown(); // initial call
 
-Increase the count without showing it on the page
-fetch('https://api.countapi.xyz/hit/mywebsite/home')
-  .then(response => response.json())
-  .then(data => {
-    console.log("Visit count updated:", data.value);
-  })
-  .catch(error => console.error('Error:', error));
 
-
-
-
+console.log("Website loaded successfully!");
