@@ -26,3 +26,17 @@ updateCountdown(); // initial call
 
 console.log("Welcome to the DSBAMUN website");
 
+const counterNamespace = "your-unique-namespace";
+const counterKey = "visits"; 
+
+fetch(`https://api.countapi.xyz/hit/${counterNamespace}/${counterKey}`)
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById("visit-counter").textContent = `Total Visits: ${data.value}`;
+  })
+  .catch(error => {
+    console.error("Error fetching visit count:", error);
+  });
+
+
+
