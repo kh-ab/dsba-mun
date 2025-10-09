@@ -23,8 +23,8 @@ const updateCountdown = () => {
 setInterval(updateCountdown, 1000);
 updateCountdown(); // initial call
 
-const namespace = "qqwetu]";  
-const key = "homme";               
+const namespace = "dsba";  
+const key = "home";               
 
 
 fetch(https://api.countapi.xyz/hit/${namespace}/${key})
@@ -32,4 +32,5 @@ fetch(https://api.countapi.xyz/hit/${namespace}/${key})
 
 
 console.log("Website loaded successfully!");
+
 
