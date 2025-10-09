@@ -23,15 +23,14 @@ const updateCountdown = () => {
 setInterval(updateCountdown, 1000);
 updateCountdown(); // initial call
 
-const namespace = "dsba";  
-const key = "home";               
+Increase the count without showing it on the page
+fetch('https://api.countapi.xyz/hit/mywebsite/home')
+  .then(response => response.json())
+  .then(data => {
+    console.log("Visit count updated:", data.value);
+  })
+  .catch(error => console.error('Error:', error));
 
-
-fetch(https://api.countapi.xyz/hit/dsba/home)
-  .catch(() => {});
-
-
-console.log("Website loaded successfully!");
 
 
 
