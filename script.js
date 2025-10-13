@@ -23,8 +23,23 @@ const updateCountdown = () => {
 setInterval(updateCountdown, 1000);
 updateCountdown(); // initial call
 
+ function toggleDropdown() {
+    document.getElementById("phoneDropdown").classList.toggle("show");
+  }
+
+  // Close dropdown if user clicks outside
+  window.addEventListener('click', function(e) {
+    if (!e.target.matches('img[alt="Call us"]')) {
+      const dropdown = document.getElementById("phoneDropdown");
+      if (dropdown && dropdown.classList.contains('show')) {
+        dropdown.classList.remove('show');
+      }
+    }
+  });
+
 
 console.log("Welcome to the DSBAMUN website");
+
 
 
 
